@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		941C863E82F7C46A90CE59FB /* Pods_FundooApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862FF2047BBD67767D489CA7 /* Pods_FundooApp.framework */; };
+		9B372D1F264F78110052C1AF /* NoteViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D1E264F78100052C1AF /* NoteViewExtension.swift */; };
+		9B372D22264F78F40052C1AF /* NotesDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D21264F78F40052C1AF /* NotesDetailVC.swift */; };
+		9B372D25264F78FD0052C1AF /* GridAndListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D24264F78FD0052C1AF /* GridAndListFlowLayout.swift */; };
+		9B372D2B264F790C0052C1AF /* NoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D2A264F790C0052C1AF /* NoteCollectionViewCell.swift */; };
+		9B372D2E264F79140052C1AF /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D2D264F79140052C1AF /* NotesViewController.swift */; };
+		9B372D34264F79820052C1AF /* NoteRealtimeDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D31264F79820052C1AF /* NoteRealtimeDatabase.swift */; };
+		9B372D35264F79820052C1AF /* NoteItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D32264F79820052C1AF /* NoteItems.swift */; };
+		9B372D36264F79820052C1AF /* NoteDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D33264F79820052C1AF /* NoteDataModel.swift */; };
+		9B372D4B264FF00A0052C1AF /* DeleteNoteCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D46264FF00A0052C1AF /* DeleteNoteCVCell.swift */; };
+		9B372D4C264FF00A0052C1AF /* DeletedNoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D47264FF00A0052C1AF /* DeletedNoteDetailVC.swift */; };
+		9B372D4D264FF00A0052C1AF /* DeleteNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D48264FF00A0052C1AF /* DeleteNoteViewController.swift */; };
+		9B372D4E264FF00A0052C1AF /* DeleteNoteExtenssion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D4A264FF00A0052C1AF /* DeleteNoteExtenssion.swift */; };
+		9B372D56264FF0150052C1AF /* ArchiveNoteExtenssion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D52264FF0150052C1AF /* ArchiveNoteExtenssion.swift */; };
+		9B372D57264FF0150052C1AF /* ArchiveNoteDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D53264FF0150052C1AF /* ArchiveNoteDetailVC.swift */; };
+		9B372D58264FF0150052C1AF /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D54264FF0150052C1AF /* ArchiveViewController.swift */; };
+		9B372D59264FF0150052C1AF /* ArchiveCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B372D55264FF0150052C1AF /* ArchiveCVCell.swift */; };
+		9B61B9BA264CA9C10029788D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B9B9264CA9C10029788D /* AppDelegate.swift */; };
+		9B61B9BC264CA9C10029788D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B9BB264CA9C10029788D /* SceneDelegate.swift */; };
+		9B61B9C1264CA9C10029788D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B61B9BF264CA9C10029788D /* Main.storyboard */; };
+		9B61B9C4264CA9C10029788D /* FundooApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B9C2264CA9C10029788D /* FundooApp.xcdatamodeld */; };
+		9B61B9C6264CA9C50029788D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B61B9C5264CA9C50029788D /* Assets.xcassets */; };
+		9B61B9C9264CA9C50029788D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B61B9C7264CA9C50029788D /* LaunchScreen.storyboard */; };
+		9B61B9EC264CAE980029788D /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B9EB264CAE980029788D /* SideMenu.swift */; };
+		9B61B9F6264D13120029788D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61B9F5264D13120029788D /* LoginViewController.swift */; };
+		9B61B9F9264D14AC0029788D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B61B9F8264D14AC0029788D /* GoogleService-Info.plist */; };
+		9B61BA0B264D16150029788D /* String + Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61BA0A264D16150029788D /* String + Extentions.swift */; };
+		9B61BA0F264D168D0029788D /* UIAlertControl + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61BA0E264D168D0029788D /* UIAlertControl + Extension.swift */; };
+		9B61BA23264D189B0029788D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61BA22264D189B0029788D /* SignUpViewController.swift */; };
+		9B61BA27264D1AD30029788D /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61BA26264D1AD30029788D /* ForgetPasswordViewController.swift */; };
+		9B61BAB4264F5F5D0029788D /* ReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61BAB1264F5F5D0029788D /* ReminderViewController.swift */; };
+		9B61BAB6264F5F5D0029788D /* RemainderDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B61BAB3264F5F5D0029788D /* RemainderDetailVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		131E5178A3ACA48DE93B0BBC /* Pods-FundooApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooApp.debug.xcconfig"; path = "Target Support Files/Pods-FundooApp/Pods-FundooApp.debug.xcconfig"; sourceTree = "<group>"; };
+		862FF2047BBD67767D489CA7 /* Pods_FundooApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FundooApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6F4D7797E6F3A42CDE43A2 /* Pods-FundooApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FundooApp.release.xcconfig"; path = "Target Support Files/Pods-FundooApp/Pods-FundooApp.release.xcconfig"; sourceTree = "<group>"; };
+		9B372D1E264F78100052C1AF /* NoteViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewExtension.swift; sourceTree = "<group>"; };
+		9B372D21264F78F40052C1AF /* NotesDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDetailVC.swift; sourceTree = "<group>"; };
+		9B372D24264F78FD0052C1AF /* GridAndListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridAndListFlowLayout.swift; sourceTree = "<group>"; };
+		9B372D2A264F790C0052C1AF /* NoteCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		9B372D2D264F79140052C1AF /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		9B372D31264F79820052C1AF /* NoteRealtimeDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteRealtimeDatabase.swift; sourceTree = "<group>"; };
+		9B372D32264F79820052C1AF /* NoteItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteItems.swift; sourceTree = "<group>"; };
+		9B372D33264F79820052C1AF /* NoteDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDataModel.swift; sourceTree = "<group>"; };
+		9B372D46264FF00A0052C1AF /* DeleteNoteCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteNoteCVCell.swift; sourceTree = "<group>"; };
+		9B372D47264FF00A0052C1AF /* DeletedNoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeletedNoteDetailVC.swift; sourceTree = "<group>"; };
+		9B372D48264FF00A0052C1AF /* DeleteNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteNoteViewController.swift; sourceTree = "<group>"; };
+		9B372D4A264FF00A0052C1AF /* DeleteNoteExtenssion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteNoteExtenssion.swift; sourceTree = "<group>"; };
+		9B372D52264FF0150052C1AF /* ArchiveNoteExtenssion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveNoteExtenssion.swift; sourceTree = "<group>"; };
+		9B372D53264FF0150052C1AF /* ArchiveNoteDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveNoteDetailVC.swift; sourceTree = "<group>"; };
+		9B372D54264FF0150052C1AF /* ArchiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		9B372D55264FF0150052C1AF /* ArchiveCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArchiveCVCell.swift; sourceTree = "<group>"; };
+		9B61B9B6264CA9C10029788D /* FundooApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FundooApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B61B9B9264CA9C10029788D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B61B9BB264CA9C10029788D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9B61B9C0264CA9C10029788D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B61B9C3264CA9C10029788D /* FundooApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FundooApp.xcdatamodel; sourceTree = "<group>"; };
+		9B61B9C5264CA9C50029788D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B61B9C8264CA9C50029788D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B61B9CA264CA9C50029788D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B61B9EB264CAE980029788D /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		9B61B9F5264D13120029788D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9B61B9F8264D14AC0029788D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B61BA0A264D16150029788D /* String + Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extentions.swift"; sourceTree = "<group>"; };
+		9B61BA0E264D168D0029788D /* UIAlertControl + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertControl + Extension.swift"; sourceTree = "<group>"; };
+		9B61BA22264D189B0029788D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9B61BA26264D1AD30029788D /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		9B61BAB1264F5F5D0029788D /* ReminderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReminderViewController.swift; sourceTree = "<group>"; };
+		9B61BAB3264F5F5D0029788D /* RemainderDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemainderDetailVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B61B9B3264CA9C10029788D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				941C863E82F7C46A90CE59FB /* Pods_FundooApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83D1DE189BF384B3E95FE19D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				131E5178A3ACA48DE93B0BBC /* Pods-FundooApp.debug.xcconfig */,
+				8B6F4D7797E6F3A42CDE43A2 /* Pods-FundooApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		910A17965CF420931BBA583E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				862FF2047BBD67767D489CA7 /* Pods_FundooApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B372D30264F79820052C1AF /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				9B372D31264F79820052C1AF /* NoteRealtimeDatabase.swift */,
+				9B372D32264F79820052C1AF /* NoteItems.swift */,
+				9B372D33264F79820052C1AF /* NoteDataModel.swift */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		9B372D45264FF00A0052C1AF /* DeletedNote */ = {
+			isa = PBXGroup;
+			children = (
+				9B372D48264FF00A0052C1AF /* DeleteNoteViewController.swift */,
+				9B372D46264FF00A0052C1AF /* DeleteNoteCVCell.swift */,
+				9B372D47264FF00A0052C1AF /* DeletedNoteDetailVC.swift */,
+				9B372D4A264FF00A0052C1AF /* DeleteNoteExtenssion.swift */,
+			);
+			path = DeletedNote;
+			sourceTree = "<group>";
+		};
+		9B372D50264FF0150052C1AF /* Archive */ = {
+			isa = PBXGroup;
+			children = (
+				9B372D54264FF0150052C1AF /* ArchiveViewController.swift */,
+				9B372D53264FF0150052C1AF /* ArchiveNoteDetailVC.swift */,
+				9B372D55264FF0150052C1AF /* ArchiveCVCell.swift */,
+				9B372D52264FF0150052C1AF /* ArchiveNoteExtenssion.swift */,
+			);
+			path = Archive;
+			sourceTree = "<group>";
+		};
+		9B61B9AD264CA9C10029788D = {
+			isa = PBXGroup;
+			children = (
+				9B61B9B8264CA9C10029788D /* FundooApp */,
+				9B61B9B7264CA9C10029788D /* Products */,
+				83D1DE189BF384B3E95FE19D /* Pods */,
+				910A17965CF420931BBA583E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B61B9B7264CA9C10029788D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B61B9B6264CA9C10029788D /* FundooApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B61B9B8264CA9C10029788D /* FundooApp */ = {
+			isa = PBXGroup;
+			children = (
+				9B61B9B9264CA9C10029788D /* AppDelegate.swift */,
+				9B61B9BB264CA9C10029788D /* SceneDelegate.swift */,
+				9B61B9F4264D12DA0029788D /* UserRegistrationVC's */,
+				9B61BA50264E09710029788D /* SideMenu */,
+				9B61BA4E264E05B80029788D /* Notes */,
+				9B372D50264FF0150052C1AF /* Archive */,
+				9B372D45264FF00A0052C1AF /* DeletedNote */,
+				9B372D30264F79820052C1AF /* FirebaseDatabase */,
+				9B61BAB0264F5F5D0029788D /* Reminder */,
+				9B61BA09264D15F70029788D /* Helpers */,
+				9B61B9BF264CA9C10029788D /* Main.storyboard */,
+				9B61B9C5264CA9C50029788D /* Assets.xcassets */,
+				9B61B9C7264CA9C50029788D /* LaunchScreen.storyboard */,
+				9B61B9CA264CA9C50029788D /* Info.plist */,
+				9B61B9C2264CA9C10029788D /* FundooApp.xcdatamodeld */,
+				9B61B9F8264D14AC0029788D /* GoogleService-Info.plist */,
+			);
+			path = FundooApp;
+			sourceTree = "<group>";
+		};
+		9B61B9F4264D12DA0029788D /* UserRegistrationVC's */ = {
+			isa = PBXGroup;
+			children = (
+				9B61B9F5264D13120029788D /* LoginViewController.swift */,
+				9B61BA22264D189B0029788D /* SignUpViewController.swift */,
+				9B61BA26264D1AD30029788D /* ForgetPasswordViewController.swift */,
+			);
+			path = "UserRegistrationVC's";
+			sourceTree = "<group>";
+		};
+		9B61BA09264D15F70029788D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9B61BA0A264D16150029788D /* String + Extentions.swift */,
+				9B61BA0E264D168D0029788D /* UIAlertControl + Extension.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9B61BA4E264E05B80029788D /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				9B372D2D264F79140052C1AF /* NotesViewController.swift */,
+				9B372D21264F78F40052C1AF /* NotesDetailVC.swift */,
+				9B372D1E264F78100052C1AF /* NoteViewExtension.swift */,
+				9B372D2A264F790C0052C1AF /* NoteCollectionViewCell.swift */,
+				9B372D24264F78FD0052C1AF /* GridAndListFlowLayout.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		9B61BA50264E09710029788D /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				9B61B9EB264CAE980029788D /* SideMenu.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		9B61BAB0264F5F5D0029788D /* Reminder */ = {
+			isa = PBXGroup;
+			children = (
+				9B61BAB1264F5F5D0029788D /* ReminderViewController.swift */,
+				9B61BAB3264F5F5D0029788D /* RemainderDetailVC.swift */,
+			);
+			path = Reminder;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B61B9B5264CA9C10029788D /* FundooApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B61B9CD264CA9C50029788D /* Build configuration list for PBXNativeTarget "FundooApp" */;
+			buildPhases = (
+				A3954416960F35D939925ED6 /* [CP] Check Pods Manifest.lock */,
+				9B61B9B2264CA9C10029788D /* Sources */,
+				9B61B9B3264CA9C10029788D /* Frameworks */,
+				9B61B9B4264CA9C10029788D /* Resources */,
+				644417F77B06209BBB0D4877 /* [CP] Embed Pods Frameworks */,
+				5206199B87AAC1898221E112 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FundooApp;
+			productName = FundooApp;
+			productReference = 9B61B9B6264CA9C10029788D /* FundooApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B61B9AE264CA9C10029788D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1210;
+				LastUpgradeCheck = 1210;
+				TargetAttributes = {
+					9B61B9B5264CA9C10029788D = {
+						CreatedOnToolsVersion = 12.1;
+					};
+				};
+			};
+			buildConfigurationList = 9B61B9B1264CA9C10029788D /* Build configuration list for PBXProject "FundooApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B61B9AD264CA9C10029788D;
+			productRefGroup = 9B61B9B7264CA9C10029788D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B61B9B5264CA9C10029788D /* FundooApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B61B9B4264CA9C10029788D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B61B9C9264CA9C50029788D /* LaunchScreen.storyboard in Resources */,
+				9B61B9C6264CA9C50029788D /* Assets.xcassets in Resources */,
+				9B61B9C1264CA9C10029788D /* Main.storyboard in Resources */,
+				9B61B9F9264D14AC0029788D /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5206199B87AAC1898221E112 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FundooApp/Pods-FundooApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FundooApp/Pods-FundooApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FundooApp/Pods-FundooApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		644417F77B06209BBB0D4877 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FundooApp/Pods-FundooApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FundooApp/Pods-FundooApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FundooApp/Pods-FundooApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3954416960F35D939925ED6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FundooApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B61B9B2264CA9C10029788D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B372D2B264F790C0052C1AF /* NoteCollectionViewCell.swift in Sources */,
+				9B372D1F264F78110052C1AF /* NoteViewExtension.swift in Sources */,
+				9B61B9F6264D13120029788D /* LoginViewController.swift in Sources */,
+				9B61BA27264D1AD30029788D /* ForgetPasswordViewController.swift in Sources */,
+				9B372D22264F78F40052C1AF /* NotesDetailVC.swift in Sources */,
+				9B61BAB6264F5F5D0029788D /* RemainderDetailVC.swift in Sources */,
+				9B372D2E264F79140052C1AF /* NotesViewController.swift in Sources */,
+				9B372D4B264FF00A0052C1AF /* DeleteNoteCVCell.swift in Sources */,
+				9B372D35264F79820052C1AF /* NoteItems.swift in Sources */,
+				9B372D59264FF0150052C1AF /* ArchiveCVCell.swift in Sources */,
+				9B61B9BA264CA9C10029788D /* AppDelegate.swift in Sources */,
+				9B61B9EC264CAE980029788D /* SideMenu.swift in Sources */,
+				9B372D58264FF0150052C1AF /* ArchiveViewController.swift in Sources */,
+				9B61BAB4264F5F5D0029788D /* ReminderViewController.swift in Sources */,
+				9B372D4D264FF00A0052C1AF /* DeleteNoteViewController.swift in Sources */,
+				9B61BA0F264D168D0029788D /* UIAlertControl + Extension.swift in Sources */,
+				9B372D25264F78FD0052C1AF /* GridAndListFlowLayout.swift in Sources */,
+				9B61B9C4264CA9C10029788D /* FundooApp.xcdatamodeld in Sources */,
+				9B372D4E264FF00A0052C1AF /* DeleteNoteExtenssion.swift in Sources */,
+				9B61BA23264D189B0029788D /* SignUpViewController.swift in Sources */,
+				9B372D4C264FF00A0052C1AF /* DeletedNoteDetailVC.swift in Sources */,
+				9B61BA0B264D16150029788D /* String + Extentions.swift in Sources */,
+				9B61B9BC264CA9C10029788D /* SceneDelegate.swift in Sources */,
+				9B372D34264F79820052C1AF /* NoteRealtimeDatabase.swift in Sources */,
+				9B372D56264FF0150052C1AF /* ArchiveNoteExtenssion.swift in Sources */,
+				9B372D36264F79820052C1AF /* NoteDataModel.swift in Sources */,
+				9B372D57264FF0150052C1AF /* ArchiveNoteDetailVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9B61B9BF264CA9C10029788D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B61B9C0264CA9C10029788D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B61B9C7264CA9C50029788D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B61B9C8264CA9C50029788D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B61B9CB264CA9C50029788D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B61B9CC264CA9C50029788D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B61B9CE264CA9C50029788D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 131E5178A3ACA48DE93B0BBC /* Pods-FundooApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FundooApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naveen.FundooApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B61B9CF264CA9C50029788D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B6F4D7797E6F3A42CDE43A2 /* Pods-FundooApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FundooApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.naveen.FundooApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B61B9B1264CA9C10029788D /* Build configuration list for PBXProject "FundooApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B61B9CB264CA9C50029788D /* Debug */,
+				9B61B9CC264CA9C50029788D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B61B9CD264CA9C50029788D /* Build configuration list for PBXNativeTarget "FundooApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B61B9CE264CA9C50029788D /* Debug */,
+				9B61B9CF264CA9C50029788D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B61B9C2264CA9C10029788D /* FundooApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B61B9C3264CA9C10029788D /* FundooApp.xcdatamodel */,
+			);
+			currentVersion = 9B61B9C3264CA9C10029788D /* FundooApp.xcdatamodel */;
+			path = FundooApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9B61B9AE264CA9C10029788D /* Project object */;
+}

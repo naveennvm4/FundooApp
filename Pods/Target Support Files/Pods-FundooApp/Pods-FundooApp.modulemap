@@ -1,0 +1,6 @@
+framework module Pods_FundooApp {
+  umbrella header "Pods-FundooApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
